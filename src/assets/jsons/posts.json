@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "title":"Alberto Savoia Can Teach You About Interior",
+        "short":"BUSINESS TECHNOLOGY",
+        "full":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+        "author":"Maja",
+        "avatarImg":"avatar-1.jpg",
+        "postImg":"featured-pic-1.jpeg",
+        "created":"2 months ago"
+    },
+    {
+        "id":2,
+        "title":"Alberto Savoia Can Teach You About Interior",
+        "short":"BUSINESS TECHNOLOGY",
+        "full":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+        "author":"Maja",
+        "avatarImg":"avatar-2.jpg",
+        "postImg":"featured-pic-2.jpeg",
+        "created":"2 months ago"
+    },
+    {
+        "id":3,
+        "title":"Alberto Savoia Can Teach You About Interior",
+        "short":"BUSINESS TECHNOLOGY",
+        "full":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+        "author":"Maja",
+        "avatarImg":"avatar-3.jpg",
+        "postImg":"featured-pic-3.jpeg",
+        "created":"2 months ago"
+    }
+]

@@ -1,0 +1,52 @@
+<!-- <app-dugme [pera]="dugmeTekst" (outputMetoda)="prihvatiPodatke($event)"></app-dugme>
+<p>{{ podatak }}</p> -->
+<form [formGroup]="contactForm">
+<div class="container" style="padding:30px">
+    <div class="row">
+        <div class="col-md-6">
+            Ime i prezime:
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="imePrezime"/><br>
+            <span *ngIf="contactForm.get('imePrezime').hasError('required')" style="color:indianred">This is field is required</span>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-md-6">
+                Email:
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" formControlName="email"/><br/>
+                <span *ngIf="contactForm.get('email').hasError('required')" style="color:indianred">This is field is required</span>
+                <span *ngIf="contactForm.get('email').hasError('email')" style="color:indianred">Email is invalid!</span>
+            </div>
+    </div>
+    <!-- <div class="row">
+            <div class="col-md-6">
+                Pol:
+            </div>
+            <div class="col-md-6">
+                M<input type="radio" name="pol" id="m"/>
+                Ž<input type="radio" name="pol" id="z"/>
+            </div>
+    </div> -->
+    <div class="row">
+            <div class="col-md-6">
+                Drzava:
+            </div>
+            <div class="col-md-6">
+                <select id="drzava" formControlName="drzava" class="form-control">
+                    <option value="0" selected>- Izaberi -</option>
+                    <option value="1">Srbija</option>
+                    <option value="2">BIH</option>
+                </select>
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" (click)="submitForm()">Posalji</button>
+            </div>
+    </div>
+</div>
+</form>
+<h3 *ngIf="isFormSubmitted">Contact form submitted!</h3>

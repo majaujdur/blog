@@ -1,0 +1,51 @@
+<section class="featured-posts no-padding-top">
+  <div class="container">
+    <!-- Post-->
+    <ng-container *ngFor="let post of posts; let i=index">
+    <ng-container *ngIf="i%2==0; else neparanPost">
+    <div class="row d-flex align-items-stretch">
+      <div class="text col-lg-7">
+        <div class="text-inner d-flex align-items-center">
+          <div class="content">
+            <header class="post-header">
+              <div class="category">{{ post.short }}</div><a (click)="navigateToPost(post.id)">
+                <h2 class="h4">{{ post.title }}</h2></a>
+            </header>
+            <p>{{ post.full }}</p>
+            <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+                <div class="avatar"><img src="assets/img/{{ post.avatarImg }}" alt="..." class="img-fluid"></div>
+                <div class="title"><span>{{ post.author }}</span></div></a>
+              <div class="date"><i class="icon-clock"></i>{{ post.created }}</div><br/>
+              <app-dugme [pera]="dugmeTekst"></app-dugme>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="image col-lg-5"><img src="assets/img/{{ post.postImg }}" alt="..."></div>
+    </div>
+  </ng-container>
+  <ng-template #neparanPost>
+      <div class="row d-flex align-items-stretch">
+          <div class="image col-lg-5"><img src="assets/img/{{ post.postImg }}" alt="..."></div>
+          <div class="text col-lg-7">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <div class="category">{{ post.short }}</div><a (click)="navigateToPost(post.id)">
+                    <h2 class="h4">{{ post.title }}</h2></a>
+                </header>
+                <p>{{ post.full }}</p>
+                <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+                    <div class="avatar"><img src="assets/img/{{ post.avatarImg }}" alt="..." class="img-fluid"></div>
+                    <div class="title"><span>{{ post.author }}</span></div></a>
+                  <div class="date"><i class="icon-clock"></i>{{ post.created }}</div><br/>
+                  <app-dugme [pera]="dugmeTekst"></app-dugme>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+  </ng-template>
+   </ng-container>
+  </div>
+</section>
